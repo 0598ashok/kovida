@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+
+    <!-- <Link rel="stylesheet" href="/Form.css"> -->
+    <Link rel="stylesheet" href="./Home.css">
+</head>
+
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bgcolor fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand"><img src="./images/Kovida Logo Landscape.png" class="img-fluid"
+                    alt=""></a>
+            <button class="navbar-toggler x" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="./kovidaAbout.html">About Us</a>
+                    </li>
+
+
+                    <li class="dropdown nav-item">
+                        <a href="./What.html" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">What We Do <span class="caret"></span></a>
+                        <ul class="dropdown-menu mb-3">
+
+                            <li><a href="./Education.html" class="nav-link ">Education</a></li>
+                            <li><a href="./Developingpoorpeople.html" class="nav-link  ">Devoloping Poor People</a></li>
+                            <li><a href="./Helpingdisabled.html" class="nav-link">Helping Disabled</a></li>
+                            <li><a href="./Tribledevelopment.html" class="nav-link">Tribal Devolopment</a></li>
+                            <li><a href="./Health.html" class="nav-link">Health</a></li>
+
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="./Blog.html"> Blog </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link   active " href="./Contact.html"> Contact US </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="./Donations.html">Donations</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog_main">
+        
+
+        <div class="container Form_top">
+            <div class="text-center  Contact_Htags" >
+                <h1><b> To Get More Details Contact Us</b></h1>
+            </div>
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="ctrlqFormContentWrapper">
+                        <!-- <div class="ctrlqHeaderMast"></div> -->
+                        <div class="ctrlqCenteredContent">
+                            <div class="ctrlqFormCard">
+
+                                <div class="ctrlqFormContent">
+
+                                    <form id="register-form" method="post" action="">
+
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <label class="Contact_Label"  for="exampleInputName">Name / పేరు</label>
+                                                <input id="username" name="name" type="text" class="validate"
+                                                    data-error="#e1" placeholder="Enter Your Name">
+                                                <div id="username-feedback"></div>
+                                                <!-- <label for="name" class="pl-3">Your Name:</label> -->
+                                                <div id="e1"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <label class="Contact_Label"  for="exampleInputEmail">Email / ఇమెయిల్</label>
+
+                                                <input id="email" name="email" type="text" class="validate"
+                                                    data-error="#e1" placeholder="Enter Your Email">
+                                                <div id="email-feedback"></div>
+                                                <!-- <label for="name" class="pl-3">Your Email:</label> -->
+                                                <div id="e1"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <label class="Contact_Label"  for="exampleInputEmail">Mobile / మొబైల్</label>
+                                                <input id="phone" name="phone" type="tel" class="validate"
+                                                    data-error="#e1" placeholder="Enter Your Mobile Number">
+                                                <div id="phone-feedback"></div>
+                                                <!-- <label for="name" class="pl-3">Mobile Number:</label> -->
+                                                <div id="e1"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <label class="Contact_Label"  for="exampleInputMessage">Message / సందేశం</label>
+                                                <input id="message" name="message" type="text" class="validate"
+                                                    data-error="#e1" placeholder="Enter Message">
+                                                <div id="message-feedback"></div>
+                                                <!-- <label for="name" class="pl-3">Message:</label> -->
+                                                <div id="e1"></div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row text-center">
+                                            <div class="input-field col m6 s12">
+                                                <input type="submit" class=" Form_sub" value="Submit" onclick="message()"
+                                                    id="submit"></input>
+                                            </div>
+                                        </div>
+
+                                        <div class="message">
+                                            <div class="success" id="success">Your message done</div>
+                                            <div class="danger" id="danger">Your message not done</div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 form_content">
+                    <p><b>In aim to reach out to those in need of social services and offer any assistance we can here we are providing the help desk registration form contact us by filling and submitting the form our team will reach you out, research the problem and help who are in need.(సామాజిక సేవలు అవసరమైన వారిని చేరుకోవడానికి మరియు మేము చేయగలిగిన ఏదైనా సహాయాన్ని అందించాలనే లక్ష్యంతో ఇక్కడ మేము హెల్ప్ డెస్క్ రిజిస్ట్రేషన్ ఫారమ్‌ను అందిస్తున్నాము, ఫారమ్‌ను పూరించడం ద్వారా మమ్మల్ని సంప్రదించండి మరియు సంప్రదించడం ద్వారా మా బృందం మిమ్మల్ని చేరుతుంది, సమస్యను పరిశోధించి సహాయం చేస్తుంది.)</b></p>
+                        <br><br>
+                    KSF is renowned for its excellence in organizational and program planning, and has documented success overcoming obstacles like resource scarcity and budgetary limitations to provide high-caliber, cost-effective, and comprehensive service offerings. skilled in creating powerful coalitions, intergovernmental alliances, and charitable support. Dr. G Anuhya Reddy Garu successfully manages the "Kovida Sahrudaya Foundation," a non-profit organization under KOVIDA GROUP (USA, UK, INDIA), KOVIDA GROUP LLC (UAE), with her income, and can vouch that it receives no funding from donors, the general public, or any other sources.
+                       <br>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="">
+                            <p><span>Address:</span> 53, Surya Enclave
+                                F1 Siddartha Nagar, Yousafguda Hyderabad, Telangana-500038
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <div class="">
+                            <p><span>Phone:</span> <a href="tel://1234567920">
+                                    <p> <span class="fa fa-phone"></span>  8688518655 , 8885003969 </p>
+                                    <!-- <p> <span class="fa fa-phone"></span> : 8885003969</p> -->
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <div class="">
+                            <p><span>Email:</span> <a
+                                    href="mailto:info@yoursite.com">help@kovidafoundation.org</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-globe"></span>
+                        </div>
+                        <div class="">
+                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- footer starts  -->
+        <footer>
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="logo_img">
+                      <img src="./images/kovida.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <p class="mt-3">Dr. G Anuhya Reddy Garu successfully manages the "Kovida Sahrudaya Foundation," a non-profit organization under KOVIDA GROUP (USA, UK, INDIA), KOVIDA GROUP LLC (UAE)
+                    </p>
+        
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 mt-4">
+                    <!-- <h4> Menu </h4> -->
+                    <ul class="links_pages">
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./kovidaAbout.html">ABOUTUS</a></li>
+                      <li><a href="./What.html">WHAT WE DO</a></li>
+                      <li><a href="./Blog.html">BLOG</a></li>
+                      <li><a href="./Contact.html">CONTACTUS</a></li>
+                    </ul>
+        
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 mt-4">
+                    <h4>Information</h4>
+                    <ul class="address1">
+                      <li><i class="fa fa-map-marker"></i>53,Surya Enclave,F1 Siddarth Nagar,Yousufguda,Hyderabad, Telangana ,India</li>
+                      <li><i class="fa fa-envelope"></i><a href="mailto:#">help@kovidafoundation.org</a></li>
+                      <li><i class="fa fa-mobile" aria-hidden="true"></i> 8688518655 , 8885003969</li>
+                    </ul>
+                  </div>
+        
+                  <div class="col-lg-2 col-md-6 mt-4">
+                    <h4>Follow us</h4>
+                    <ul class="social-icon">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
+
+
+        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</div>
+
+
+        <!-- form validation -->
+        <script>
+            // document.getElementById("submit").addEventListener ("click",validateForm);
+
+            //     function validateForm (e){
+            //         e.preventDefault();
+            //         var checkUserName = document.getElementById("#username").value;
+            //         var checkEmail = document.getElementById("#email").value;
+            //         var checkContact = document.getElementById("#phone").value;
+            //         if(checkUserName == null || checkUserName == '', checkEmail == null ||  checkEmail == '',  checkContact==null || checkContact == '' ){
+            //         M.toast({
+            //             html:"please fill All the inputs"
+            //         });
+            //     }
+            //     }
+
+               
+
+
+            let registrationForm = document.querySelector('#register-form')
+            registrationForm.addEventListener('submit', function (event) {
+                event.preventDefault(); //stops auto form submission
+
+                validateForm();
+                // window.location="index.html";
+            });
+
+            let validateForm = () => {
+                checkUserName();
+                checkEmail();
+                checkContact();
+                // checkMessage();
+
+
+            };
+
+            let checkUserName = () => {
+                let inputEl = document.querySelector('#username')
+                let inputFeedbackEl = document.querySelector('#username-feedback')
+                let regExp = /^[a-zA-Z0-9]{4,10}/
+                if (regExp.test(inputEl.value)) {
+                    makeValid(inputEl, inputFeedbackEl);
+                }
+                else {
+                    makeInvalid(inputEl, inputFeedbackEl);
+                }
+            };
+
+            let checkEmail = () => {
+                let inputEl = document.querySelector('#email')
+                let inputFeedbackEl = document.querySelector('#email-feedback')
+                let regExp = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/
+                if (regExp.test(inputEl.value)) {
+                    makeValid(inputEl, inputFeedbackEl);
+                }
+                else {
+                    makeInvalid(inputEl, inputFeedbackEl);
+                }
+            };
+
+
+            let checkContact = () => {
+                let inputEl = document.querySelector('#phone')
+                let inputFeedbackEl = document.querySelector('#phone-feedback')
+                let regExp = /^[6-9]\d{9}$/
+                if (regExp.test(inputEl.value)) {
+                    makeValid(inputEl, inputFeedbackEl);
+                }
+                else {
+                    makeInvalid(inputEl, inputFeedbackEl);
+                }
+
+            };
+
+
+            // let checkMessage = () => {
+            //     let inputEl = document.querySelector('#message')
+            //     let inputFeedbackEl = document.querySelector('#message-feedback')
+            //     let regExp = /^[a-zA-Z0-9]{5,150}/
+            //     if (regExp.test(inputEl.value)) {
+            //         makeValid(inputEl, inputFeedbackEl);
+            //     }
+            //     else {
+            //         makeInvalid(inputEl, inputFeedbackEl);
+            //     }
+            // };
+
+            // make Valid
+
+            let makeValid = (inputEl, inputFeedbackEl) => {
+                inputEl.classList.add('is-form-valid');
+                inputEl.classList.remove('is-form-invalid');
+                inputFeedbackEl.classList.add('text-success');
+                inputFeedbackEl.classList.remove('text-danger');
+                inputFeedbackEl.innerText = 'looks Good';
+
+                // danger.style.display = 'block';
+            }
+
+
+
+            // make InValid
+
+            let makeInvalid = (inputEl, inputFeedbackEl) => {
+                inputEl.classList.remove('is-form-valid');
+                inputEl.classList.add('is-form-invalid');
+                inputFeedbackEl.classList.remove('text-success');
+                inputFeedbackEl.classList.add('text-danger');
+                inputFeedbackEl.innerText = `Please  ${inputEl.placeholder}`;
+
+                
+            }
+
+
+
+            //onChange value success
+
+            let usernameEl = document.querySelector('#username');
+            usernameEl.addEventListener('keyup', function () {
+                checkUserName();
+            })
+
+
+            let emailEl = document.querySelector('#email');
+            emailEl.addEventListener('keyup', function () {
+                checkEmail();
+            })
+
+            let phoneEl = document.querySelector('#phone')
+            phoneEl.addEventListener('keyup', function () {
+                checkContact();
+            })
+    //         toast.success('Successfully Registerd', {
+    //     position: toast.POSITION.TOP_RIGHT,
+    //   })
+  
+      
+
+            // let messageEl = document.querySelector('#message')
+            // messageEl.addEventListener('keyup', function () {
+            //     checkMessage();
+            // })
+
+
+
+
+        </script>
+
+
+        <!-- send Exel -->
+
+        <script>
+
+            let form = document.querySelector("form");
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                document.querySelector("#submit").value = "submit";
+                let data = new FormData(form);
+                fetch('https://script.google.com/macros/s/AKfycby_Ol-V37PzleaAEgOxQyftApuTjY9GjrIptY07oQLitZAeWDL6P7p_16aZcSD1CCo_mg/exec', {
+                    method: "POST",
+                    body: data
+                })
+                
+                    .then(res => res.text())
+                    .then(data => {
+                        document.querySelector("#msg").innerHTML = data;
+                        document.querySelector("#submit").value = "Submit"
+
+                    });
+                    var checkUserName = document.getElementById("name").value;
+        var checkEmail = document.getElementById("email").value;
+        // var checkContact = document.getElementById("phone").value;
+        if(checkUserName == null || checkUserName == '', checkEmail == null ||  checkEmail == '',  checkContact==null || checkContact == '' ){
+        M.toast({
+            html:"please fill All the inputs"
+        });
+    }
+                    
+            })
+
+        </script>
+
+
+    <!-- onscroll -->
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 100)
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
